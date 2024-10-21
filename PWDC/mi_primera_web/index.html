@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi primera web</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/860576aebe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
     <div class="container">
+        <!-- !Menu section -->
         <header>
             <a href="index.html">
-                <i class="fa-solid fa-user-astronaut"></i>
+                <img src="logo.png" alt="Tu logotipo">
             </a>
             <nav>
                 <ul>
                     <li><a href="">Inicio</a></li>
                     <li><a href="">Acerca de mi</a></li>
-                    <li><a href="">Servicios</a></li>
                     <li><a href="">Proyectos</a></li>
                     <li><a href="">Contacto</a></li>
                 </ul>
@@ -26,39 +33,120 @@
         </header>
         <!-- MAIN SECTION -->
         <main id="seccion-principal">
-            <section class="seccion-1">
-                <div class="acerca-de">
-                    <h2>
-                        Acerca de mi
-                    </h2>
-                    <p class="parrafo-1">
-                        ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.
-                    </p>
-                    <p class="parrafo-2">
-                        Me llamo Agner de Jesús, nací en Colombia y actualmente vivo en Mompox. Soy ingeniero DevOps apasionado por la tecnología y la innovación. Me encanta aprender cosas nuevas y encontrar soluciones creativas a los problemas técnicos. Disfruto desarrollando proyectos que mejoren la eficiencia y faciliten la vida de las personas, y siempre estoy buscando maneras de optimizar y automatizar procesos. Mi objetivo es seguir creciendo profesionalmente para convertirme en un especialista en SRE y contribuir a la evolución tecnológica.
-                    </p>
-                </div>
-                <div class="acerca-imagen">
-                    <img src="img/1.JPG" alt="Me">
+
+            <section class="about-section">
+                <div class="about-container">
+                    <img src="img/1.jpg" alt="Imagen de Agner" class="about-image" />
+                    <div class="about-text">
+                        <h2>Sobre Mí</h2>
+                        <p>Me llamo Agner de Jesús, nací en Colombia y actualmente vivo en Mompox. Soy ingeniero DevOps
+                            apasionado por la tecnología y la innovación.</p>
+                        <p><strong>Me encanta aprender cosas nuevas y encontrar soluciones creativas a los
+                                problemas</strong>.
+                            Disfruto desarrollando proyectos que mejoren la eficiencia y faciliten la vida de las
+                            personas, y siempre estoy buscando maneras de optimizar y automatizar procesos.</p>
+                        <p>Mi objetivo es seguir creciendo profesionalmente para convertirme en un especialista en SRE y
+                            contribuir a la evolución tecnológica.</p>
+                    </div>
                 </div>
             </section>
-            <section class="seccion-2">
-                <img src="img/pc.jpeg" alt="imagen de carrusel">
-                <img src="img/2.JPG" alt="imagen de carrusel">
+
+            <!-- !Section for proyects -->
+            <h2 class="section-title">Proyectos</h2>
+            <section class="resources-section">
+                <div class="resource-container">
+                    <img src="img/2.jpg" alt="Recursos gratuitos" class="resource-image" />
+                    <div class="resource-content">
+                        <h3>Recursos Gratuitos</h3>
+                        <p>Con estos recursos te invito a recargar tu mochila creativa, trabajar sobre tu branding
+                            personal, explorar la técnica del collage y reconectar con tu niñx interior. ¡Descárgalos y
+                            empezá hoy mismo!</p>
+                        <a href="#" class="resource-link">Saber más</a>
+                    </div>
+                </div>
+
+                <div class="resource-container">
+                    <img src="img/2.jpg" alt="Cursos online" class="resource-image" />
+                    <div class="resource-content">
+                        <h3>Cursos Online</h3>
+                        <p>Conocé mi oferta de cursos de creatividad introspectiva: Autopromoción para Creativos,
+                            Passion Projects, Barajar y Dar de Nuevo y Luz, Cámara, Emoción.</p>
+                        <a href="#" class="resource-link">Saber más</a>
+                    </div>
+                </div>
+
+                <div class="resource-container">
+                    <img src="img/1.jpg" alt="Cursos online" class="resource-image" />
+                    <div class="resource-content">
+                        <h3>Cursos Online</h3>
+                        <p>Conocé mi oferta de cursos de creatividad introspectiva: Autopromoción para Creativos,
+                            Passion Projects, Barajar y Dar de Nuevo y Luz, Cámara, Emoción.</p>
+                        <a href="#" class="resource-link">Saber más</a>
+                    </div>
+                </div>
+
+                <div class="resource-container">
+                    <img src="img/2.jpg" alt="Cursos online" class="resource-image" />
+                    <div class="resource-content">
+                        <h3>Cursos Online</h3>
+                        <p>Conocé mi oferta de cursos de creatividad introspectiva: Autopromoción para Creativos,
+                            Passion Projects, Barajar y Dar de Nuevo y Luz, Cámara, Emoción.</p>
+                        <a href="#" class="resource-link">Saber más</a>
+                    </div>
+                </div>
+
+                <div class="resource-container">
+                    <img src="img/pc.jpeg" alt="Cursos online" class="resource-image" />
+                    <div class="resource-content">
+                        <h3>Cursos Online</h3>
+                        <p>Conocé mi oferta de cursos de creatividad introspectiva: Autopromoción para Creativos,
+                            Passion Projects, Barajar y Dar de Nuevo y Luz, Cámara, Emoción.</p>
+                        <a href="#" class="resource-link">Saber más</a>
+                    </div>
+                </div>
+
+                <div class="resource-container">
+                    <img src="img/2.jpg" alt="Cursos online" class="resource-image" />
+                    <div class="resource-content">
+                        <h3>Cursos Online</h3>
+                        <p>Conocé mi oferta de cursos de creatividad introspectiva: Autopromoción para Creativos,
+                            Passion Projects, Barajar y Dar de Nuevo y Luz, Cámara, Emoción.</p>
+                        <a href="#" class="resource-link">Saber más</a>
+                    </div>
+                </div>
             </section>
+
+            <ul class="social-icons">
+                <li>
+                    <a href="https://discord.com/josssefje" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/villa_fabrega" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/agner-villa-fabrega-a27044222/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>  
+
+                </li>
+            </ul>
+
+            <!-- Todo: carousel of images-->
+            <!-- <section class="seccion-2">
+                <img src="img/p2c.jpeg" alt="carousel of image" />
+            </section> -->
+
         </main>
         <!-- FOOTER SECTION -->
         <footer id="footer">
-            <h3>
-                <nav>
-                    <ul>
-                        <li><a href="">..</a></li>
-                        <li><a href="">...</a></li>
-                        <li><a href="">....</a></li>
-                    </ul>
-                </nav>
-            </h3>
+            <p>Una iniciativa de <span class="highlight">@EggLive</span></p>
         </footer>
+
     </div>
 </body>
+
 </html>
