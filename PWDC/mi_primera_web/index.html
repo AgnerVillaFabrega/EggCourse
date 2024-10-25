@@ -20,15 +20,18 @@
         <!-- !Menu section -->
         <header>
             <a href="index.html">
-                <img src="logo.png" alt="Tu logotipo">
+                <img class = "logo" src="img/logo.png" alt="Tu logotipo">
             </a>
             <nav>
-                <ul>
+                <ul class="menu">
                     <li><a href="">Inicio</a></li>
-                    <li><a href="">Acerca de mi</a></li>
+                    <li><a href="">Acerca de mí</a></li>
                     <li><a href="">Proyectos</a></li>
                     <li><a href="">Contacto</a></li>
                 </ul>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </nav>
         </header>
         <!-- MAIN SECTION -->
@@ -39,14 +42,31 @@
                     <img src="img/1.jpg" alt="Imagen de Agner" class="about-image" />
                     <div class="about-text">
                         <h2>Sobre Mí</h2>
-                        <p>Me llamo Agner de Jesús, nací en Colombia y actualmente vivo en Mompox. Soy ingeniero DevOps
+                        <p>Me llamo Agner, nací en Colombia y actualmente vivo en Mompox. Soy ingeniero de sistemas
                             apasionado por la tecnología y la innovación.</p>
                         <p><strong>Me encanta aprender cosas nuevas y encontrar soluciones creativas a los
                                 problemas</strong>.
                             Disfruto desarrollando proyectos que mejoren la eficiencia y faciliten la vida de las
                             personas, y siempre estoy buscando maneras de optimizar y automatizar procesos.</p>
-                        <p>Mi objetivo es seguir creciendo profesionalmente para convertirme en un especialista en SRE y
-                            contribuir a la evolución tecnológica.</p>
+                            <br>
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="https://discord.com/josssefje" target="_blank">
+                                        <i class="fab fa-discord"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/villa_fabrega" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/agner-villa-fabrega-a27044222/" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>  
+                
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </section>
@@ -116,24 +136,7 @@
                 </div>
             </section>
 
-            <ul class="social-icons">
-                <li>
-                    <a href="https://discord.com/josssefje" target="_blank">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/villa_fabrega" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/agner-villa-fabrega-a27044222/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>  
-
-                </li>
-            </ul>
+            
 
             <!-- Todo: carousel of images-->
             <!-- <section class="seccion-2">
@@ -147,6 +150,17 @@
         </footer>
 
     </div>
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.querySelector('nav ul');
+    
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
 </body>
 
 </html>

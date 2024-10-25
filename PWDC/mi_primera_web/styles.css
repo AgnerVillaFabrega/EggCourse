@@ -14,12 +14,23 @@ a {
 }
 
 /* ?Menu */
+/* ?Estilos del header y menú */
+.logo {
+    width: 75px;
+    /* Ajusta según sea necesario */
+    height: auto;
+    filter: drop-shadow(2px 2px 5px rgba(231, 228, 228, 0.7));
+    /* Sombra suave */
+
+}
+
 header {
     display: flex;
     background-color: #f0f0f0;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    position: relative;
 }
 
 header a img {
@@ -27,6 +38,7 @@ header a img {
     margin-right: 1rem;
 }
 
+/* Estilos del menú en pantalla grande */
 header nav ul {
     list-style: none;
     padding: 0;
@@ -40,18 +52,117 @@ header nav ul li {
 header nav ul li a {
     color: #333;
     text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
 header nav ul li a:hover {
-    color: #ff0000;
+    color: #ff5714;
+    transition: color 0.3s;
 }
 
+/* ?Menú hamburguesa */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 24px;
+}
+
+.hamburger span {
+    display: block;
+    background-color: #333;
+    height: 3px;
+    margin: 5px 0;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+/* ?Estilos del menú hamburguesa cuando se activa */
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #f7f7f7;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu.active li {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.menu.active li a {
+    color: #d94f04;
+    font-size: 1.3em;
+}
+
+/* ? Animación de menú hamburguesa al activarse */
+.menu.active .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu.active .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.active .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ? Mostrar el menú hamburguesa en pantallas pequeñas */
 @media (max-width: 768px) {
     header nav ul {
         display: none;
     }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 1.5rem;
+        font-size: 1.2em;
+        text-align: center;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu li a:hover {
+        background-color: #ff5714;
+        color: white;
+    }
 }
 
+/* ? Imagenes responsivas */
+.about-image,
+.resource-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 /*? resources-section */
 /* Contenedor principal - mantiene el layout en filas y distribuye bien los elementos */
@@ -131,12 +242,12 @@ header nav ul li a:hover {
 }
 
 /* Responsive: para pantallas más pequeñas */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .resource-container {
-        width: 100%; 
+        width: 100%;
         margin-bottom: 1.5em;
     }
-} */
+}
 
 
 /* ? About Section */
@@ -153,6 +264,8 @@ header nav ul li a:hover {
     display: flex;
     max-width: 1000px;
     align-items: center;
+    flex-wrap: wrap;
+    /* Permite que los elementos se muevan cuando el ancho es pequeño */
 }
 
 /* Estilo para la imagen */
@@ -166,7 +279,7 @@ header nav ul li a:hover {
 
 /* Contenedor del texto */
 .about-text {
-    max-width: 50%;
+    width: 50%;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #555;
@@ -191,6 +304,39 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
+/* RESPONSIVE DESIGN */
+
+/* Para pantallas más pequeñas, como móviles */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        /* Cambia la orientación a vertical */
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+        /* Imagen ocupa todo el ancho del contenedor */
+        margin-right: 0;
+        /* Remueve el margen derecho */
+        margin-bottom: 2em;
+        /* Añade espacio debajo de la imagen */
+    }
+
+    .about-text {
+        width: 100%;
+        /* Texto ocupa todo el ancho debajo de la imagen */
+    }
+
+    /* Ajustar el tamaño del título y párrafos en pantallas pequeñas */
+    .about-text h2 {
+        font-size: 2em;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+}
 
 
 /* ?Footer */
