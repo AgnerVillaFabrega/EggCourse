@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/860576aebe.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -140,6 +140,28 @@
             </section>
 
             
+            <!-- <div class="frase-container">
+                <div class="frase-card">
+                    <h2>Frase Motivacional</h2>
+                    <p id="frase">Haz clic en el botón para generar una frase motivacional.</p>
+                    <button id="btn-generar">Generar Frase Aleatoria</button>
+                </div>
+            </div> -->
+
+            <div class="frase-container">
+                <div class="frase-card">
+                    <div class="frase-content">
+                        <div class="frase-texto">
+                            <h2>Frase Motivacional</h2>
+                            <p id="frase">Haz clic en el botón para generar una frase motivacional.</p>
+                            <button id="btn-generar">Generar Frase Aleatoria</button>
+                        </div>
+                        <div class="frase-imagen">
+                            <img src="./img/2.JPG" alt="Imagen motivacional">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Todo: carousel of images-->
             <!-- <section class="seccion-2">
@@ -154,15 +176,8 @@
 
     </div>
 
-
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.querySelector('nav ul');
-    
-        hamburger.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    </script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/menu.js"></script>
 
 </body>
 

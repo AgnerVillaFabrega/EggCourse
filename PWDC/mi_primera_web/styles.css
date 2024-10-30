@@ -381,3 +381,87 @@ header nav ul li a:hover {
 .social-icons i {
     font-size: 24px;
 }
+
+/* ? Frase motivacional */
+.frase-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.frase-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Estructura de contenido dentro de la tarjeta */
+.frase-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.frase-texto {
+    flex: 1;
+    text-align: center;
+}
+
+.frase-texto h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.frase-texto p {
+    font-size: 18px;
+    color: #555;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+#btn-generar {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-generar:hover {
+    background-color: #e64a19;
+}
+
+/* Estilos de imagen */
+.frase-imagen img {
+    width: 230px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .frase-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frase-imagen img {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 120px;
+    }
+}
